@@ -3,7 +3,6 @@ import UIKit
 struct MapPickerFactory {
     
     static func makeViewController(pickupPointsResponse: PickupPointsResponse,
-                                   coordinates: VintedGOPicker.Coordinates,
                                    completion: @escaping (_ shippingPointCode: String) -> ()) -> UIViewController {
         let presenter = MapPickerPresenter()
         let interactor = MapPickerInteractor(
