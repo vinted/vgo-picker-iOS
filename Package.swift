@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "VintedGO-iOS",
+    resources: [.process("Resources")],
     platforms: [
         .iOS(.v13)
     ],
